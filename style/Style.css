@@ -1,0 +1,51 @@
+#more {
+    display: none;
+}
+
+.buttonContainer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#myBtn {
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+}
+
+/* women */
+/* Index */
+
+a.nav-link:hover,
+a.nav-link:active {
+    text-decoration: underline;
+    font-size: 110%;
+}
+
+.featurette-divider {
+    text-align: center;
+}
+
+/* Index */
+/* cardsindex */
+.ho:hover {
+    text-shadow: none !important;
+    box-sizing: border-box !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    -webkit-transition: scale(1.1) !important;
+    -ms-transform: scale(1.1) !important;
+    transform: scale(1.1) !important;
+    z-index: 2;
+}
+
+/* .carousel-control-prev{
+    background-color: #e1e1e1;
+    width: 6vh;
+    transform: translateY(50%);
+} */
+
