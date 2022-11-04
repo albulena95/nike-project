@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Nike Shoes</title>
-        <script src="../functions/changeImgshoes.js" ></script>
+        <script src="../functions/changeImg.js" ></script>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <style>
@@ -122,14 +122,15 @@
            <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img src="https://imgs.search.brave.com/1JOfmW52qcwsT5Eiu4fbddn0LBH7uWnD8yNLbQ3ui90/rs:fit:1024:1024:1/g:ce/aHR0cDovL2xvZnJl/di5uZXQvd3AtY29u/dGVudC9waG90b3Mv/MjAxNy8wNS9uaWtl/LWp1c3Rkb2l0LWxv/Z29fMS5qcGc" alt="logo" width="80px"></a>
+          <a class="navbar-brand" href="../index.html">
+            <img src="https://pngimages.in/uploads/png/air-jordan-logo.png" alt="logo" width="80px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="Women.html">Women</a>
+                <a class="nav-link active" aria-current="page" href="../Women.html">Women</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Men.html">Men</a>
@@ -145,7 +146,7 @@
                     <li><a class="dropdown-item" href="#">Bags</a></li>
                     <li><a class="dropdown-item" href="#">Watches</a></li>
                     <li><a class="dropdown-item" href="#">Hats</a></li>
-                    <li><a class="dropdown-item" href="Shoes.html" target="_blank">Shoes</a></li>
+                    <li><a class="dropdown-item" href="../Shoes.html" target="_blank">Shoes</a></li>
                     <li><a class="dropdown-item" href="#">Sale</a></li>
                 </ul>
               </li>
@@ -160,41 +161,40 @@
       <!-- navbar -->
     <!-- Product Details -->
     <div class="container bootdey mt-3">
-        <div class="col-md-12">
-            <div class="col">
+        <div class="col-lg col-sm">
                 <section class="panel">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-lg col-md col-sm">
                             <div class="pro-img-details">
-                                <img width="550px" height="380px"
-                                    id="imgid"
+                                <img width="250px" height="380px"
+                                    id="shoeImage"
                                     class="pro-img-details-item pro-img-deatils-item-action active"
-                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6RHyP0FddJ80IQwV4P0NfeenOQG0ovyjYnQ&usqp=CAU"  alt="">
+                                    src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/7db7404d-765d-4f31-8ff4-1d9e4b4fb39c/air-force-1-pixel-womens-shoe-3qrstC.png"  alt="">
                             </div>
                             <div class="pro-img-list">
-                                <a href="#" class="pro-img-details-item pro-img-deatils-item-action" onclick="changeImg(0)" >
+                                <a href="#" class="pro-img-details-item pro-img-deatils-item-action" onclick="shoeImg(0)" >
                                     <img width="115px" height="100px"
-                                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6RHyP0FddJ80IQwV4P0NfeenOQG0ovyjYnQ&usqp=CAU"
+                                        src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/46081461-5341-42a8-be41-df94abb8c1fb/air-force-1-pixel-womens-shoe-3qrstC.png"
                                         alt="">
                                 </a>
-                                <a href="#" class="pro-img-details-item pro-img-deatils-item-action" onclick="changeImg(1)" >
+                                <a href="#" class="pro-img-details-item pro-img-deatils-item-action" onclick="shoeImg(1)" >
                                     <img width="115px" height="100px"
-                                        src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/bfbc7e60-3a6b-4e93-8d0c-d53a2ff48f05/air-max-270-womens-shoes-Pgb94t.png"
+                                        src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/0e3b493d-8665-4c5a-9758-6b6e16def48f/air-force-1-pixel-womens-shoe-3qrstC.png"
                                         alt="">
                                 </a>
-                                <a href="#" class="pro-img-details-item pro-img-deatils-item-action" onclick="changeImg(2)" >
+                                <a href="#" class="pro-img-details-item pro-img-deatils-item-action" onclick="shoeImg(2)" >
                                     <img width="115px" height="100px"
-                                        src="https://sneakers123.s3.amazonaws.com/release/30025/nike-air-max-270-ah8050-008.jpg"
+                                        src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/bfe80b18-6756-433c-8945-7d957a2b25ea/air-force-1-pixel-womens-shoe-3qrstC.png"
                                         alt="">
                                 </a>
-                                <a href="#" class="pro-img-details-item pro-img-deatils-item-action" onclick="changeImg(3)" >
+                                <a href="#" class="pro-img-details-item pro-img-deatils-item-action" onclick="shoeImg(3)" >
                                     <img width="115px" height="100px"
-                                        src="https://www.rebelsport.com.au/dw/image/v2/BBRV_PRD/on/demandware.static/-/Sites-srg-internal-master-catalog/default/dwb0826719/images/59505601/Rebel_59505601_black_hi-res.jpg?sw=1000&sh=1000&sm=fit"
+                                        src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,b_rgb:f5f5f5/b7277263-511f-4355-b58e-5799f290c810/air-force-1-pixel-womens-shoe-3qrstC.png"
                                         alt="">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-6">
+                        <div class="col-lg col-md col-sm">
                             <h4 class="pro-d-title">
                                 <a href="#" class="">
                                     Nike women's Air Force
@@ -225,7 +225,7 @@
                         </div>
                     </div>
                 </section>
-            </div>
+        
         </div>
     </div>
     <!-- Product Details -->

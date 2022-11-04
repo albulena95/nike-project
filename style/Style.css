@@ -1,3 +1,5 @@
+
+
 #more {
     display: none;
 }
@@ -15,6 +17,7 @@
     font-weight: bold;
     border: none;
     border-radius: 2px;
+    cursor: pointer;
 }
 
 /* women */
@@ -22,6 +25,7 @@
 
 a.nav-link:hover,
 a.nav-link:active {
+    
     text-decoration: underline;
     font-size: 110%;
 }
@@ -32,15 +36,15 @@ a.nav-link:active {
 
 /* Index */
 /* cardsindex */
+
 .ho:hover {
-    text-shadow: none !important;
-    box-sizing: border-box !important;
     cursor: pointer !important;
+    box-sizing: border-box !important;
     transition: all 0.3s ease !important;
     -webkit-transition: scale(1.1) !important;
     -ms-transform: scale(1.1) !important;
     transform: scale(1.1) !important;
-    z-index: 2;
+
 }
 
 /* .carousel-control-prev{
@@ -49,3 +53,87 @@ a.nav-link:active {
     transform: translateY(50%);
 } */
 
+.card:hover {
+    text-shadow: none !important;
+    box-sizing: border-box !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    -webkit-transition: scale(1.1) !important;
+    -ms-transform: scale(1.1) !important;
+    transform: scale(1.1) !important;
+    z-index: 2;
+    }
+
+/* animation */
+    .sda-content {
+        /* width: 87vw; */
+        position: relative;
+        overflow: hidden;
+        --offset: 20vw;
+        --move-initial: calc(-25% + var(--offset));
+        --move-final: calc(-50% + var(--offset));
+      }
+      
+      .sda-content-items {
+        width: fit-content;
+        display: flex;
+        position: relative;
+        transform: translateX(0);
+        animation: marquee 10s linear infinite;
+      
+      }
+      
+      .sda-content img {
+        width: 20vw;
+        height: 20vh;
+        padding: 0 2vw;
+      }
+      
+      .sda-content-items {
+        animation-play-state: running;
+      }
+      
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
+        }
+      
+        100% {
+          transform: translateX(-180vw);
+        }
+      }
+
+
+      /* video */
+      #myVideo {
+        /* position: fixed; */
+        right: 0;
+        bottom: 0;
+       width: 100%;
+       height: auto;
+      }
+      
+      .content {
+        position: static;
+        bottom: 18;
+        background: rgba(255, 255, 255, 0.5);
+        color: #000000;
+        width: 100%;
+        padding: 10px;
+        
+      }
+      
+      #idBtn {
+        width: 200px;
+        font-size: 18px;
+        padding: 10px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+      #idBtn:hover {
+        background: #ddd;
+        color: black;
+      } 
