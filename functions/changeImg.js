@@ -101,3 +101,19 @@ const shoeImg = (id) => {
           break;
   }
 }
+
+function myButonn() {
+  var dott = document.getElementById("dot");
+  var viewText = document.getElementById("View");
+  var btnTextt = document.getElementById("myBT");
+
+  if (dott.style.display === "none") {
+    dott.style.display = "inline";
+    btnTextt.innerHTML = "View details"+ "&raquo";
+    viewText.style.display = "none";
+  } else {
+    dott.style.display = "none";
+    btnTextt.innerHTML = "View less details";
+    viewText.style.display = "inline";
+  }
+}
