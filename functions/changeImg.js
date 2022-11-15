@@ -117,3 +117,22 @@ function myButonn() {
     viewText.style.display = "inline";
   }
 }
+
+
+function increaseValue() {
+  var value = 
+  parseInt(document.getElementById('add-card').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value > 9 ? value = 9: '';
+  value++;
+  
+  document.getElementById('add-card').value = value;
+}
+function decreaseValue(){
+  var value = 
+  parseInt(document.getElementById('add-card').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value < 1 ? value = 1: '';
+  value--;
+  document.getElementById('add-card').value = value;
+}

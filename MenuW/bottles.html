@@ -97,15 +97,14 @@
             color: #fc5959;
         }
 
-        .pro-price,
-        .amount-old {
+        .pro-price {
             font-size: 18px;
             padding: 0 10px;
         }
 
 
         .quantity {
-            width: 120px;
+            width: 50px;
         }
 
         .pro-img-list {
@@ -212,6 +211,22 @@
             .col-25 {
                 margin-bottom: 20px;
             }
+
+            .form-group {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .buttons{
+                display: flex;
+                flex-direction: row;
+                gap: 8px;
+                align-items: center;
+            }
+            .fa-minus{
+                color: red;
+            }
+            
         }
     </style>
 </head>
@@ -220,8 +235,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img
-                    src="https://pngimages.in/uploads/png/air-jordan-logo.png"
+            <a class="navbar-brand" href="../index.html"><img src="https://pngimages.in/uploads/png/air-jordan-logo.png"
                     alt="logo" width="80px"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -237,7 +251,7 @@
                         <a class="nav-link" href="../Men.html">Men</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"  href="../Kids.html">Kids</a>
+                        <a class="nav-link" href="../Kids.html">Kids</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" id="nabarDropdown" role="button"
@@ -265,78 +279,77 @@
     <!-- Product Details -->
     <div class="container bootdey mt-3">
         <div class="col-lg col-sm">
-                <section class="panel">
-                    <div class="row">
-                        <div class="col-lg col-md col-sm">
-                            <div class="pro-img-details">
-                                <img width="550px" height="380px" id="imgid"
-                                    class="pro-img-details-item pro-img-deatils-item-action active"
-                                    src="https://static.nike.com/a/images/c_limit,w_400,f_auto/t_product_v1/5afe20c2-b99a-4856-adc7-b88973434252/image.jpg"
-                                    alt="">
-                            </div>
-                            <div class="pro-img-list">
-                                <a href="#" class="pro-img-details-item pro-img-deatils-item-action"
-                                    onclick="changeImg(0)">
-                                    <img width="115px" height="100px"
-                                        src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/65bf4345-c14d-44f0-b74a-f7715025e53b/hyperfuel-24oz-water-bottle-ZNchhD.png"
-                                        alt="">
-                                </a>
-                                <a href="#" class="pro-img-details-item pro-img-deatils-item-action"
-                                    onclick="changeImg(1)">
-                                    <img width="115px" height="100px"
-                                        src="https://m.media-amazon.com/images/I/51u5iI4pGKL._SY355_.jpg" alt="">
-                                </a>
-                                <a href="#" class="pro-img-details-item pro-img-deatils-item-action"
-                                    onclick="changeImg(2)">
-                                    <img width="115px" height="100px"
-                                        src="https://www.rebelsport.com.au/dw/image/v2/BBRV_PRD/on/demandware.static/-/Sites-srg-internal-master-catalog/default/dw5b1e16e5/images/529445/Rebel_529445_blue_hi-res.jpg?sw=1000&sh=1000&sm=fit"
-                                        alt="">
-                                </a>
-                                <a href="#" class="pro-img-details-item pro-img-deatils-item-action"
-                                    onclick="changeImg(3)">
-                                    <img width="115px" height="100px"
-                                        src="https://www.rebelsport.com.au/dw/image/v2/BBRV_PRD/on/demandware.static/-/Sites-srg-internal-master-catalog/default/dwa72dfa6a/images/529445/Rebel_529445_hi-res.jpg?sw=1000&sh=1000&sm=fit"
-                                        alt="">
-                                </a>
-                            </div>
+            <section class="panel">
+                <div class="row">
+                    <div class="col-lg col-md col-sm">
+                        <div class="pro-img-details">
+                            <img width="550px" height="380px" id="imgid"
+                                class="pro-img-details-item pro-img-deatils-item-action active"
+                                src="https://static.nike.com/a/images/c_limit,w_400,f_auto/t_product_v1/5afe20c2-b99a-4856-adc7-b88973434252/image.jpg"
+                                alt="">
                         </div>
-                        <div class="col-lg col-md col-sm">
-                            <h4 class="pro-d-title">
-                                <a href="#" class="">
-                                    Nike Bottles
-                                </a>
-                            </h4>
-                            <p>
-                                Praesent ac condimentum felis. Nulla at nisl orci, at dignissim dolor, The best product
-                                descriptions address your ideal buyer directly and personally. The best product
-                                descriptions address your ideal buyer directly and personally.
-                            </p>
-                            <div class="product_meta">
-                                <span class="posted_in"> <strong>Categories:</strong> <a rel="tag" href="#">Jackets</a>,
-                                    <a rel="tag" href="#">Men</a>, <a rel="tag" href="#">Shirts</a>, <a rel="tag"
-                                        href="#">T-shirt</a>.</span>
-                                <span class="tagged_as"><strong>Tags:</strong> <a rel="tag" href="#">mens</a>, <a
-                                        rel="tag" href="#">womens</a>.</span>
-                            </div>
-                            <div class="m-bot15"> <strong>Price : </strong> <span class="pro-price"> $20.00</span>
-                            </div>
-                            <p>
-                            <div class="form-group">
-                                <label>Quantity</label>
-                                <input type="quantiy" id="add-card" class="form-control quantity" value="0">
-                            </div>
-                            <P>
-                                <button class="btn btn-round btn-danger mt-2 sideviewtoggle myButton" type="button"
-                                    id="button1" onclick="SwitchButtons('button1');"><i class="fa fa-shopping-cart"></i>
-                                    Add to Cart</button>
-                                <button id="button2" onclick="SwitchButtons('button2');"
-                                    class="btn btn-round btn-danger mt-2 sideviewtoggle myButton" style='display:none;'
-                                    data-bs-toggle="modal" data-bs-target="#myModal"><i
-                                        class="fa-solid fa-money-check-dollar"></i>Buy</button>
-                            </p>
+                        <div class="pro-img-list">
+                            <a href="#" class="pro-img-details-item pro-img-deatils-item-action" onclick="changeImg(0)">
+                                <img width="115px" height="100px"
+                                    src="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto/65bf4345-c14d-44f0-b74a-f7715025e53b/hyperfuel-24oz-water-bottle-ZNchhD.png"
+                                    alt="">
+                            </a>
+                            <a href="#" class="pro-img-details-item pro-img-deatils-item-action" onclick="changeImg(1)">
+                                <img width="115px" height="100px"
+                                    src="https://m.media-amazon.com/images/I/51u5iI4pGKL._SY355_.jpg" alt="">
+                            </a>
+                            <a href="#" class="pro-img-details-item pro-img-deatils-item-action" onclick="changeImg(2)">
+                                <img width="115px" height="100px"
+                                    src="https://www.rebelsport.com.au/dw/image/v2/BBRV_PRD/on/demandware.static/-/Sites-srg-internal-master-catalog/default/dw5b1e16e5/images/529445/Rebel_529445_blue_hi-res.jpg?sw=1000&sh=1000&sm=fit"
+                                    alt="">
+                            </a>
+                            <a href="#" class="pro-img-details-item pro-img-deatils-item-action" onclick="changeImg(3)">
+                                <img width="115px" height="100px"
+                                    src="https://www.rebelsport.com.au/dw/image/v2/BBRV_PRD/on/demandware.static/-/Sites-srg-internal-master-catalog/default/dwa72dfa6a/images/529445/Rebel_529445_hi-res.jpg?sw=1000&sh=1000&sm=fit"
+                                    alt="">
+                            </a>
                         </div>
                     </div>
-                </section>
+                    <div class="col-lg col-md col-sm">
+                        <h4 class="pro-d-title">
+                            <a href="#" class="">
+                                Nike Bottles
+                            </a>
+                        </h4>
+                        <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, hic? Laudantium, ipsum quis id reiciendis numquam odio labore molestias atque blanditiis! Quisquam laudantium nemo beatae ratione minima natus sint inventore?
+                        </p>
+                        <div class="product_meta">
+                            <span class="posted_in"> <strong>Categories:</strong> <a rel="tag" href="#">Jackets</a>,
+                                <a rel="tag" href="#">Men</a>, <a rel="tag" href="#">Shirts</a>, <a rel="tag"
+                                    href="#">T-shirt</a>.</span>
+                            <span class="tagged_as"><strong>Tags:</strong> <a rel="tag" href="#">mens</a>, <a rel="tag"
+                                    href="#">womens</a>.</span>
+                        </div>
+                        <div class="m-bot15"> <strong>Price : </strong> <span class="pro-price"> $20.00</span>
+                        </div>
+                        <p>
+                        <div class="form-group">
+                            <label>Quantity</label>
+                            <div class="buttons">
+                                <i class="fa-solid fa-minus" onclick="decreaseValue()"></i>
+                                <input type="quantiy" id="add-card" class="form-control quantity" value="0">
+                                <i class="fa-solid fa-plus" onclick="increaseValue()"></i>
+                            </div>
+                        </div>
+
+                        <P>
+                            <button class="btn btn-round btn-danger mt-2 sideviewtoggle myButton" type="button"
+                                id="button1" onclick="SwitchButtons('button1');"><i class="fa fa-shopping-cart"></i>
+                                 Cart</button>
+                            <button id="button2" onclick="SwitchButtons('button2');"
+                                class="btn btn-round btn-danger mt-2 sideviewtoggle myButton" style='display:none;'
+                                data-bs-toggle="modal" data-bs-target="#myModal"><i
+                                    class="fa-solid fa-money-check-dollar"></i>Buy</button>
+                        </p>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
     <!-- end Product Details -->
