@@ -63,7 +63,7 @@ function SwitchButtons(button1) {
 
 
 
-function myButonn() {
+function myButoonn() {
   var video = document.getElementById("myVideo");
 
   var btn = document.getElementById("idBtn")
