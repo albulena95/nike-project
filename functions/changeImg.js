@@ -136,3 +136,21 @@ function decreaseValue(){
   value--;
   document.getElementById('add-card').value = value;
 }
+
+
+let mesazhi = document.getElementById("fmessage");
+let numeruesi = document.getElementById("numeruesi");
+let limit = mesazhi.getAttribute("maxlength");
+
+numeruesi.innerHTML = ` 0/${limit}`;
+
+mesazhi.addEventListener("input", function(){
+  let gjatesia = mesazhi.value.length;
+  numeruesi.innerHTML = ` ${gjatesia}/${limit}`;
+  if(
+    gjatesia == limit ){
+      numeruesi.className = "ngjyre-e-kuqe";
+    }else {
+      numeruesi.className = "";
+    }
+}) 

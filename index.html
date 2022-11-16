@@ -6,6 +6,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://kit.fontawesome.com/25e7cfc0d3.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style/Style.css">
+  
 </head>
 
 <body>
@@ -442,9 +443,10 @@
                         <div class="col-lg col-sm">
                           <div class="form-group">
                             <label for="fmessage">Message</label>
-                            <textarea name="message" id="fmessage" class="form-control"
+                            <textarea maxlength="150" name="message" id="fmessage" class="form-control"
                               placeholder="Write your message here..." rows="4" required="requird"
                               data-error="Please, leave us a message."></textarea>
+                              <p id="numeruesi"></p>
                           </div>
                         </div>
                         <div class="row">
@@ -467,6 +469,7 @@
     <!-- The Modal -->
   </div>
   </div>
+  <script src="functions/changeImg.js"></script>
 </body>
 
 </html>
